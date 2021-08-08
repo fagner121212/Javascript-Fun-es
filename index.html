@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function escreva() {
+            console.log('Olá programador abordo')
+        }
+        escreva()
+
+        function escrevaMensagen (mensagen) {
+            console.log(mensagen)
+        }
+
+        escrevaMensagen('Hello World')
+        escrevaMensagen('você está praticando funçãos ')
+
+        function soma (a, b) {
+            return a + b
+        }
+        let resultadoSoama = soma(10, 5)
+        console.log(resultadoSoama)
+
+        function somaTudo (numeros) {
+            var total = 0
+
+            for (var num of numeros) {
+                total = total + num
+            }
+            return total
+        }
+        var arrayNumeros = [3, 5, 10, 50, 20, 50, 19, ]
+        var resultado = somaTudo(arrayNumeros)
+        console.log(resultado)
+
+        function escreveEndereço(rua, cidade, pais, ...complementos) {
+            console.log(rua)
+            console.log(cidade)
+            console.log(pais)
+            console.log(complementos)
+        }
+        escreveEndereço ('Escadaria Divino Espirito Santo', 'Espirito Santo', 'Brasil', 'São Pedro', 'Cep 29032-145' )
+
+       
+
+        var subtraidoiNumeros = function subtrai(a, b) {
+            return a -b;
+        }
+
+        console.log(subtraidoiNumeros(10, 3))
+
+        var subtraiTres = function (a, b, c) {
+            return a - b - c;
+        }
+        console.log(subtraiTres(50, 10, 10))
+
+        var autoExecuta = (function (nome) {
+            console.log('executei', nome)
+        }('Fagner'))
+
+        function somaCallback(a, b, fnCallback){
+            return fnCallback(a + b)
+        }
+
+        console.log(somaCallback(10, 3, function(total){
+            return total * 2
+        }))
+    </script>
+</body>
+</html>
